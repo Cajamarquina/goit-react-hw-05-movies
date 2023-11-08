@@ -1,7 +1,7 @@
 import { Outlet, useParams, useLocation } from 'react-router-dom';
 import { useState, useEffect, useRef, Suspense } from 'react';
 import { ColorRing } from 'react-loader-spinner';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import { TbCircleArrowLeft } from 'react-icons/tb';
 import { fetchMovieDetails } from 'API';
 import { ContainerLoader } from 'components/ContainerLoader/ContainerLoader.styled';

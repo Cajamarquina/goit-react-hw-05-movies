@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ColorRing } from 'react-loader-spinner';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 import { fetchMovieCredits } from 'API';
 import { ContainerLoader } from 'components/ContainerLoader/ContainerLoader.styled';
