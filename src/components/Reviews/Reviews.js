@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ColorRing } from 'react-loader-spinner';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 import { fetchMovieReviews } from 'API';
 import { ContainerLoader } from 'components/ContainerLoader/ContainerLoader.styled';
@@ -26,7 +26,6 @@ const Reviews = () => {
         setIsLoading(true);
         setError(false);
         const reviewsById = await fetchMovieReviews(movieId);
-        toast.success('Movies found successfully!');
         if (reviewsById.results && reviewsById.results.length > 0) {
           setMovieReviews(reviewsById.results);
         } else {
